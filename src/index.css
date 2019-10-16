@@ -1,13 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
 body {
+  transition: background-color 0.5s ease;
+  color: #0494fc;
+  background-color: #0494fc;
+  background-image: url("./assets/Images/stars-bg.svg");
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 371px;
+}
+
+p {
+  color: #dfe6e9;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1199px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.7rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  h2 {
+    font-size: 0.95rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-height: 760px) {
+  .responsiveButton {
+    padding: 2px;
+  }
+
+  .responsiveQuote {
+    padding: 0;
+  }
+}
+
+@media (max-height: 660px) {
+  h2 {
+    font-size: 0.75rem;
+  }
+
+  h5 {
+    font-size: 0.6rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
 }
