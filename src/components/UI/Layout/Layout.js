@@ -6,12 +6,12 @@ const layout = props => (
       <div className="col-8 mx-auto text-center">
         <ul className="nav justify-content-end mb-0 ">
           <li className="nav-item">
-            <a className="nav-link text-light" href="/">
+            <a className="nav-link text-light" href="/#">
               Log-in
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-light" href="/">
+            <a className="nav-link text-light" href="/#">
               Register
             </a>
           </li>
